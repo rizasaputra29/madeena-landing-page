@@ -3,6 +3,7 @@ export type Gender = "MALE" | "FEMALE";
 export interface Staff {
   id: string;
   name: string;
+  nip: string;
   gender: Gender;
   role: string;
   department: string;

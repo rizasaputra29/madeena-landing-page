@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import { activitiesData } from "~/data/academic/activitiesData";
-import { cn } from "~/lib/utils";
+
 
 interface ActivitiesContentProps {
   category: "preschool" | "primary";
