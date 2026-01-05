@@ -6,7 +6,7 @@ export const activitiesData = {
       description:
         "Anak-anak belajar melalui kegiatan di berbagai sentra seperti sentra balok, main peran, bahan alam, seni, dan persiapan. Pembelajaran tematik membantu anak mengenal konsep akademik dasar dengan cara yang alami dan kontekstual.",
       image:
-        "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767535964/1702622936513.jpg",
     },
     {
       id: 2,
@@ -14,7 +14,7 @@ export const activitiesData = {
       description:
         "Anak dikenalkan pada huruf hijaiyah, membaca Al-Qur'an dengan metode Qiroati, serta menghafal surat-surat pendek dengan suasana yang ceria dan menyenangkan.",
       image:
-        "https://images.unsplash.com/photo-1609599006353-e629aaabfeae?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767535964/1702622935709.jpg",
     },
     {
       id: 3,
@@ -22,7 +22,7 @@ export const activitiesData = {
       description:
         "Anak mempraktikkan nilai-nilai akhlak dari hadits-hadits pilihan melalui permainan peran, sehingga pesan moral dan keteladanan Rasulullah SAW tertanam secara alami.",
       image:
-        "https://images.unsplash.com/photo-1566004100631-35d015d6a491?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767535964/1702622936199.jpg",
     },
     {
       id: 4,
@@ -30,7 +30,7 @@ export const activitiesData = {
       description:
         "Setiap pagi anak dibiasakan melaksanakan sholat Dhuha berjamaah sebagai bentuk pelatihan spiritual dan pembentukan karakter religius sejak dini.",
       image:
-        "https://images.unsplash.com/photo-1584817790025-988c55747030?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767535964/1702622936008.jpg",
     },
     {
       id: 5,
@@ -38,7 +38,7 @@ export const activitiesData = {
       description:
         "Melalui kegiatan upacara dan peringatan hari besar nasional, anak diajarkan rasa cinta tanah air, disiplin, dan kebersamaan.",
       image:
-        "https://images.unsplash.com/photo-1532375810709-75b1da00537c?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767535964/1702622936492.jpg",
     },
     {
       id: 6,
@@ -46,7 +46,7 @@ export const activitiesData = {
       description:
         "Kegiatan senam rutin dilakukan untuk mendukung perkembangan fisik anak, melatih koordinasi tubuh, serta menanamkan semangat hidup sehat dan gembira.",
       image:
-        "https://images.unsplash.com/photo-1596464716127-f9a82741cacb?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767536333/DSCF5439.jpg",
     },
     {
       id: 7,
@@ -54,7 +54,7 @@ export const activitiesData = {
       description:
         "Melalui kisah-kisah para nabi dan tokoh Islam, anak diajak meneladani sifat sabar, jujur, dan berani dalam kebaikan.",
       image:
-        "https://images.unsplash.com/photo-1519682577862-22b62b24e493?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767536343/DSCF5946.jpg",
     },
     {
       id: 8,
@@ -62,7 +62,7 @@ export const activitiesData = {
       description:
         "Pembelajaran di luar kelas yang dirancang sesuai tema untuk memperluas wawasan dan pengalaman nyata anak terhadap lingkungan sekitar.",
       image:
-        "https://images.unsplash.com/photo-1534567153574-2b12153a87f0?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767536351/DSCF5980.jpg",
     },
     {
       id: 9,
@@ -70,7 +70,7 @@ export const activitiesData = {
       description:
         "Guru dan orang tua mendapatkan pendampingan dari konselor sekolah dalam memahami perkembangan anak secara emosional dan perilaku.",
       image:
-        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767536381/DSCF5939.jpg",
     },
     {
       id: 10,
@@ -78,7 +78,7 @@ export const activitiesData = {
       description:
         "Kegiatan kolaborasi sekolah dan orang tua untuk memperkuat sinergi pendidikan dan pengasuhan berbasis karakter Islami.",
       image:
-        "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767536402/DSCF5480.jpg",
     },
   ],
   primary: [
@@ -88,7 +88,7 @@ export const activitiesData = {
       description:
         "Kegiatan pembinaan karakter Islami yang menanamkan nilai-nilai keimanan, akhlak mulia, dan adab dalam kehidupan sehari-hari.",
       image:
-        "https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537054/DSCF0064.jpg",
     },
     {
       id: 2,
@@ -96,7 +96,7 @@ export const activitiesData = {
       description:
         "Pembelajaran keterampilan hidup seperti kemandirian, kerja sama, tanggung jawab, dan komunikasi efektif.",
       image:
-        "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537052/DSCF0050.jpg",
     },
     {
       id: 3,
@@ -104,7 +104,7 @@ export const activitiesData = {
       description:
         "Pembiasaan nilai-nilai karakter unggul seperti religius, disiplin, peduli, tangguh, dan dapat dipercaya.",
       image:
-        "https://images.unsplash.com/photo-1526976668912-1a811878dd37?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537051/DSCF0042.jpg",
     },
     {
       id: 4,
@@ -112,7 +112,7 @@ export const activitiesData = {
       description:
         "Program unggulan penguatan kemampuan membaca Al-Qur'an dengan metode Qiroati serta hafalan surat-surat pilihan.",
       image:
-        "https://images.unsplash.com/photo-1585036156171-384164a8c675?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537056/DSCF0066.jpg",
     },
     {
       id: 5,
@@ -120,7 +120,7 @@ export const activitiesData = {
       description:
         "Kegiatan pembuka pagi yang mengasah kemampuan akademik, meningkatkan fokus, dan menumbuhkan semangat belajar sejak awal hari.",
       image:
-        "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537056/DSCF0056.jpg",
     },
     {
       id: 6,
@@ -128,7 +128,7 @@ export const activitiesData = {
       description:
         "Sistem tugas terarah yang membantu siswa membangun disiplin belajar di rumah dengan bimbingan guru dan dukungan orang tua.",
       image:
-        "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537092/DSCF4680.jpg",
     },
     {
       id: 7,
@@ -136,7 +136,7 @@ export const activitiesData = {
       description:
         "Kegiatan kolaborasi sekolah dan orang tua untuk memperkuat sinergi pendidikan dan pengasuhan berbasis karakter Islami.",
       image:
-        "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537089/DSCF4572.jpg",
     },
     {
       id: 8,
@@ -144,7 +144,7 @@ export const activitiesData = {
       description:
         "Program rutin menjaga kesehatan dan kebugaran siswa bekerja sama dengan tenaga medis profesional.",
       image:
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537089/DSCF4633.jpg",
     },
     {
       id: 9,
@@ -152,7 +152,15 @@ export const activitiesData = {
       description:
         "Kegiatan reflektif yang menumbuhkan kebiasaan positif dan kepemimpinan diri melalui penulisan jurnal harian.",
       image:
-        "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537265/DSCF4620.jpg",
+    },
+        {
+      id: 10,
+      title: "Jurnal 7 Kebiasaan Anak Indonesia Hebat",
+      description:
+        "Kegiatan reflektif yang menumbuhkan kebiasaan positif dan kepemimpinan diri melalui penulisan jurnal harian.",
+      image:
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537089/DSCF4594.jpg",
     },
   ],
 };

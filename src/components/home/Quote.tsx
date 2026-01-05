@@ -89,7 +89,7 @@ export default function Quote() {
           ref={contentRef}
           className="relative z-20 container mx-auto flex flex-1 flex-col items-center justify-center px-6 text-center"
         >
-          <div className="relative mb-6 h-24 w-24 sm:mb-8 sm:h-28 sm:w-28 md:h-36 md:w-36">
+          <div className="relative mb-6 h-24 w-24 sm:mb-8 sm:h-36 sm:w-36 md:h-48 md:w-48">
             {/* Static Logo */}
             <Image
               src="https://res.cloudinary.com/dah2v3xbg/image/upload/v1763885433/logo-without-text_iuydhz.svg"
@@ -109,11 +109,10 @@ export default function Quote() {
           </div>
 
           <h2 className="mb-3 font-sans text-2xl leading-relaxed font-bold text-gray-900 sm:mb-4 sm:text-3xl md:text-4xl lg:text-6xl">
-            Growing Golden Generation <br></br> with Islamic Character
+            Growing Global Generation <br></br> with Islamic Character
           </h2>
-          <p className="max-w-2xl leading-relaxed font-medium text-gray-600 text-base md:text-xl">
-            At Al Madeena, we lead them to be a smart generation, good manner,
-            and ready to face the future.
+          <p className="max-w-2xl leading-relaxed font-medium text-gray-600 text-xl md:text-2xl">
+            Empowering students to become intelligent, good manner, and future leaders
           </p>
         </div>
       </div>

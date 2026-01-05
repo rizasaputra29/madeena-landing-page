@@ -47,7 +47,7 @@ export default function ProgramsContent({ category }: ProgramsContentProps) {
                 />
 
                 {/* Dark Overlay Gradient */}
-                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/40 to-black/0" />
 
                 {/* Content Container */}
                 <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-10">

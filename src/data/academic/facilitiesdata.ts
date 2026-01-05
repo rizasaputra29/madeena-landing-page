@@ -6,7 +6,7 @@ export const facilitiesData = {
       description:
         "Kelas yang bersih, sejuk, dan nyaman untuk menciptakan suasana belajar yang menyenangkan bagi anak-anak.",
       image:
-        "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=3556&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537931/DSCF0956.jpg",
       icon: "Wind",
     },
     {
@@ -15,7 +15,7 @@ export const facilitiesData = {
       description:
         "Area bermain dalam ruangan yang aman dan interaktif, memungkinkan anak tetap aktif meski dalam kondisi cuaca apa pun.",
       image:
-        "https://images.unsplash.com/photo-1596464716127-f9a82741cacb?q=80&w=3552&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537926/DSCF0959.jpg",
       icon: "Puzzle",
     },
     {
@@ -24,7 +24,7 @@ export const facilitiesData = {
       description:
         "Lapangan bermain terbuka yang dirancang untuk melatih motorik kasar, kerja sama, dan keberanian anak melalui berbagai aktivitas fisik.",
       image:
-        "https://images.unsplash.com/photo-1562719656-19f3d15c951c?q=80&w=3474&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537956/DSCF0995.jpg",
       icon: "Sun",
     },
     {
@@ -33,7 +33,7 @@ export const facilitiesData = {
       description:
         "Digunakan untuk kegiatan rutin seperti upacara, senam, dan pembelajaran berbasis alam yang menumbuhkan rasa cinta kebersamaan.",
       image:
-        "https://images.unsplash.com/photo-1532375810709-75b1da00537c?q=80&w=3570&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537932/DSCF0971.jpg",
       icon: "Flag",
     },
     {
@@ -42,7 +42,7 @@ export const facilitiesData = {
       description:
         "Beragam permainan edukatif di dalam kelas yang dirancang untuk mengembangkan keterampilan berpikir, imajinasi, dan kreativitas anak.",
       image:
-        "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=3571&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537950/DSCF0980.jpg",
       icon: "Shapes",
     },
     {
@@ -51,7 +51,7 @@ export const facilitiesData = {
       description:
         "Mendukung proses pembelajaran interaktif melalui media digital yang menarik dan sesuai usia anak.",
       image:
-        "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=3570&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537947/DSCF0977.jpg",
       icon: "Tv",
     },
     {
@@ -60,7 +60,16 @@ export const facilitiesData = {
       description:
         "Ruang belajar disusun berdasarkan area pengembangan (sentra) seperti sentra balok, main peran, seni, dan bahan alam, sehingga anak dapat belajar sesuai minat dan tahap perkembangannya.",
       image:
-        "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=3632&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537955/DSCF0996.jpg",
+      icon: "LayoutGrid",
+    },
+    {
+      id: 8,
+      title: "Kelas Berbasis Sentra",
+      description:
+        "Ruang belajar disusun berdasarkan area pengembangan (sentra) seperti sentra balok, main peran, seni, dan bahan alam, sehingga anak dapat belajar sesuai minat dan tahap perkembangannya.",
+      image:
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767539152/DSCF0853.jpg",
       icon: "LayoutGrid",
     },
   ],
@@ -71,7 +80,7 @@ export const facilitiesData = {
       description:
         "Memberikan kenyamanan belajar dengan suasana yang sejuk dan kondusif.",
       image:
-        "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=3632&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537873/DSCF0855.jpg",
       icon: "Wind",
     },
     {
@@ -80,7 +89,7 @@ export const facilitiesData = {
       description:
         "Menjadi tempat siswa mengembangkan keterampilan fisik, sportivitas, dan kerja sama tim.",
       image:
-        "https://images.unsplash.com/photo-1534234828563-025262234f94?q=80&w=3344&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537882/DSCF0877.jpg",
       icon: "Activity",
     },
     {
@@ -89,7 +98,7 @@ export const facilitiesData = {
       description:
         "Digunakan untuk berbagai kegiatan sekolah seperti upacara, pentas seni, seminar, dan kegiatan keagamaan.",
       image:
-        "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=3570&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537910/DSCF0903.jpg",
       icon: "Building2",
     },
     {
@@ -98,7 +107,7 @@ export const facilitiesData = {
       description:
         "Menumbuhkan budaya literasi sejak dini dengan koleksi buku bacaan yang menarik dan mendidik.",
       image:
-        "https://images.unsplash.com/photo-1519682577862-22b62b24e493?q=80&w=3560&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537911/DSCF0955.jpg",
       icon: "BookOpen",
     },
     {
@@ -107,7 +116,7 @@ export const facilitiesData = {
       description:
         "Mendukung pembelajaran interaktif berbasis media digital agar siswa lebih aktif dan termotivasi.",
       image:
-        "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=3570&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537897/DSCF0890.jpg",
       icon: "MonitorPlay",
     },
     {
@@ -116,7 +125,26 @@ export const facilitiesData = {
       description:
         "Sistem pembelajaran digital yang memudahkan guru, siswa, dan orang tua dalam mengakses materi, tugas, serta perkembangan belajar secara terintegrasi.",
       image:
-        "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=3570&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537902/DSCF0892.jpg",
+      icon: "Laptop",
+    },
+    {
+      id: 7,
+      title: "Learning Management System (LMS)",
+      description:
+        "Sistem pembelajaran digital yang memudahkan guru, siswa, dan orang tua dalam mengakses materi, tugas, serta perkembangan belajar secara terintegrasi.",
+      image:
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537883/DSCF0882.jpg"
+        ,
+      icon: "Laptop",
+    },
+    {
+      id: 8,
+      title: "Learning Management System (LMS)",
+      description:
+        "Sistem pembelajaran digital yang memudahkan guru, siswa, dan orang tua dalam mengakses materi, tugas, serta perkembangan belajar secara terintegrasi.",
+      image:
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767537872/DSCF0859.jpg",
       icon: "Laptop",
     },
   ],

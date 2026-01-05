@@ -170,7 +170,7 @@ export function CareerList({ careers }: CareerListProps) {
                         asChild
                       >
                         <a
-                          href={`mailto:recruitment@almadeena.sch.id?subject=Lamaran Kerja - ${encodeURIComponent(
+                          href={`mailto:halo.almadeena@gmail.com?subject=Lamaran Kerja - ${encodeURIComponent(
                             job.title,
                           )}`}
                         >

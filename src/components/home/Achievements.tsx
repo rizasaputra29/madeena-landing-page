@@ -79,7 +79,7 @@ export default function Achievements({ preschool, primary }: AchievementsProps) 
                   : "border-gray-400 bg-transparent text-gray-500 hover:border-gray-600 hover:text-gray-700"
               )}
             >
-              Primary School
+              Primary
             </button>
           </div>
         </div>

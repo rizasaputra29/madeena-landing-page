@@ -24,23 +24,6 @@ export function ContactContent() {
   return (
     <section className="bg-background py-16 md:py-24">
       <div className="container mx-auto px-6">
-        <motion.div
-          className="mb-12 max-w-2xl"
-          initial="initial"
-          whileInView="whileInView"
-          viewport={{ once: true }}
-          variants={fadeIn}
-        >
-          <h2 className="text-foreground mb-4 text-3xl font-bold md:text-4xl">
-            Kontak Utama
-          </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">
-            Silakan hubungi kami melalui kontak di bawah ini sesuai dengan
-            jenjang pendidikan yang Anda tuju atau kunjungi lokasi kami secara
-            langsung.
-          </p>
-        </motion.div>
-
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {/* Address Card */}
           <motion.div
@@ -111,7 +94,7 @@ export function ContactContent() {
                  <div className="space-y-1">
                   <h4 className="text-foreground font-semibold">Kantor Administrasi</h4>
                   <p className="text-muted-foreground leading-relaxed">
-                    Senin - Jumat: 07.30 - 15.00 WIB
+                    Senin - Jumat: 08.00 - 14.00 WIB
                   </p>
                 </div>
                 <div className="space-y-1">
@@ -258,7 +241,7 @@ export function ContactContent() {
                     asChild
                   >
                     <a
-                      href="https://www.youtube.com/@almadeenaislamicschool4379"
+                      href="https://www.youtube.com/@almadeenaislamicschool"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

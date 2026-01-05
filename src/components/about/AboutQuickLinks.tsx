@@ -17,25 +17,25 @@ const quickLinks = [
     title: "Visi Misi",
     href: "/about/vision-mission",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763381013/about-vision_kwls3g.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767537866/DSCF0854.jpg",
   },
   {
     title: "Dewan Yayasan",
     href: "/about/foundation-board",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763381012/about-founder_htnxgj.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767540976/dewan-2.webp",
   },
   {
     title: "Guru & Staf",
     href: "/about/staff-profile",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763381013/about-staff_twqujg.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767541251/DSCF4716.jpg",
   },
   {
     title: "Partner Kerjasama",
     href: "/about/partners",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763381014/about-partner_hokvbf.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767288988/logo-mentari_wsascm.png",
   },
 ];
 

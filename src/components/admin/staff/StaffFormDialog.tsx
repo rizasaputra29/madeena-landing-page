@@ -28,7 +28,6 @@ import type { Staff } from "~/types/staff";
 
 const formSchema = z.object({
   name: z.string().min(1, "Nama wajib diisi"),
-  nip: z.string().min(1, "NIP wajib diisi"),
   gender: z.enum(["MALE", "FEMALE"]),
   role: z.string().min(1, "Jabatan wajib diisi"),
   department: z.string().min(1, "Departemen wajib dipilih"),
@@ -49,10 +48,8 @@ interface StaffFormDialogProps {
 }
 
 const DEPARTMENTS = [
-  { value: "leadership", label: "Leadership Team" },
-  { value: "teachers", label: "Teaching Staff" },
-  { value: "administration", label: "Administration" },
-  { value: "support", label: "Support Staff" },
+  { value: "preschool", label: "Preschool" },
+  { value: "primary", label: "Primary" }
 ];
 
 export function StaffFormDialog({
@@ -63,7 +60,6 @@ export function StaffFormDialog({
 }: StaffFormDialogProps) {
   const [formData, setFormData] = useState<FormData>({
     name: "",
-    nip: "",
     gender: "MALE",
     role: "",
     department: "",
@@ -80,7 +76,6 @@ export function StaffFormDialog({
       if (initialData) {
         setFormData({
           name: initialData.name,
-          nip: initialData.nip,
           gender: initialData.gender as "MALE" | "FEMALE",
           role: initialData.role,
           department: initialData.department,
@@ -93,7 +88,6 @@ export function StaffFormDialog({
       } else {
         setFormData({
           name: "",
-          nip: "",
           gender: "MALE",
           role: "",
           department: "",
@@ -168,7 +162,6 @@ export function StaffFormDialog({
         </DialogHeader>
 
         <form onSubmit={handleSubmit} className="space-y-6 py-4">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="space-y-2">
               <Label htmlFor="name">
                 Nama Lengkap<span className="-ml-1.5 text-red-500">*</span>
@@ -181,19 +174,6 @@ export function StaffFormDialog({
                 required
               />
             </div>
-            <div className="space-y-2">
-              <Label htmlFor="nip">
-                NIP / ID Yayasan<span className="-ml-1.5 text-red-500">*</span>
-              </Label>
-              <Input
-                id="nip"
-                value={formData.nip}
-                onChange={(e) => handleChange("nip", e.target.value)}
-                placeholder="Contoh: 2023001"
-                required
-              />
-            </div>
-          </div>
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="space-y-2">

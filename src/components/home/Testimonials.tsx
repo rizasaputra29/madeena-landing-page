@@ -147,8 +147,8 @@ export default function Testimonials() {
                 {item.type === "Parent"
                   ? "Parents"
                   : item.type === "Student"
-                  ? "Students"
-                  : item.type}
+                    ? "Students"
+                    : item.type}
               </h3>
 
               {/* Video/Image Container */}
@@ -190,7 +190,6 @@ export default function Testimonials() {
                     hoveredId === item.id ? "opacity-0" : "opacity-100"
                   )}
                 >
-                  <p className="text-white font-semibold text-xl">{item.name}</p>
                   <div className="mt-2 h-8 w-8 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm">
                     <svg className="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z" />
@@ -244,14 +243,7 @@ export default function Testimonials() {
                 Your browser does not support the video tag.
               </video>
             </div>
-            <div className="bg-white p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                {selectedTestimonial.name} - {selectedTestimonial.type}
-              </h3>
-              <p className="text-gray-600">
-                &quot;{selectedTestimonial.text}&quot;
-              </p>
-            </div>
+
           </div>
         </div>
       )}

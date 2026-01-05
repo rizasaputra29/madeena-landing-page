@@ -49,9 +49,6 @@ export default function Academic({ staff, board }: AcademicProps) {
            >
              Get To Know Al Madeena
            </motion.h2>
-           <motion.p className="text-base leading-relaxed text-white/90 md:text-lg">
-             Al Madeena is a modern Islamic school that blends faith and knowledge...
-           </motion.p>
         </div>
 
         <div className="mb-8 flex flex-wrap justify-center gap-3 md:gap-4">

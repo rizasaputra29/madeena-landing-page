@@ -10,37 +10,37 @@ const quickLinks = [
     title: "Program Unggulan",
     href: "/preschool/programs",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763224680/Preschool-Academic_jt56ik.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767450555/DSCF0358_ocxba2.jpg",
   },
   {
     title: "Kurikulum",
     href: "/preschool/curriculum",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763224680/Preschool-Academic_jt56ik.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767449546/DSCF7742_fiygc4.jpg",
   },
   {
     title: "Prestasi",
     href: "/preschool/achievements",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763224680/Preschool-Academic_jt56ik.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767541614/prestasi.webp",
   },
   {
     title: "Kegiatan",
     href: "/preschool/activities",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763224680/Preschool-Academic_jt56ik.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767535964/1702622936513.jpg",
   },
   {
     title: "Ekstrakurikuler",
     href: "/preschool/extracurricular",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763224680/Preschool-Academic_jt56ik.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767451903/20251204_120848_odqktk.webp",
   },
   {
     title: "Fasilitas",
     href: "/preschool/facilities",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763224680/Preschool-Academic_jt56ik.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767537931/DSCF0956.jpg",
   },
 ];
 

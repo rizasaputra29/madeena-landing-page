@@ -138,7 +138,7 @@ export default function Programs() {
                   : "border-gray-400 bg-transparent text-gray-500 hover:border-gray-600 hover:bg-gray-50",
               )}
             >
-              Primary School
+              Primary
             </button>
           </div>
         </div>
@@ -181,11 +181,6 @@ export default function Programs() {
                         <h3 className="text-2xl font-bold text-white drop-shadow-md mb-0 transition-all duration-300 group-hover:mb-2">
                           {item.title}
                         </h3>
-                        <div className="flex items-center gap-2 pb-2 text-sm font-semibold text-white transition-all group-hover:gap-3">
-                          <p className="text-sm text-white">
-                            Baca Selengkapnya
-                          </p>
-                        </div>
                         <div className="grid grid-rows-[0fr] transition-all duration-300 ease-out group-hover:grid-rows-[1fr]">
                           <div className="overflow-hidden">
                             <p className="text-sm font-medium leading-relaxed text-gray-200 opacity-0 transition-opacity duration-300 group-hover:opacity-100">

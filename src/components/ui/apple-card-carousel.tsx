@@ -154,7 +154,8 @@ export const Card = ({
       <motion.button
         layoutId={layout ? `card-${card.id}` : undefined}
         onClick={onClick}
-        className="relative z-10 flex h-80 w-56 flex-col items-start justify-end overflow-hidden rounded-3xl bg-gray-100 md:h-160 md:w-96 dark:bg-neutral-900" // Fixed h-[40rem] to h-160
+        // Changed h-80/md:h-160 to aspect-3/4 to match staff card ratio
+        className="relative z-10 flex w-56 aspect-3/4 flex-col items-start justify-end overflow-hidden rounded-3xl bg-gray-100 md:w-96 dark:bg-neutral-900"
       >
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-linear-to-t from-black/50 via-transparent to-transparent" />{" "}
         {/* Fixed bg-gradient-to-b */}

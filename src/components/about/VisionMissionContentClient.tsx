@@ -73,7 +73,7 @@ export default function VisionMissionContentClient({
 
                 <div>
                   <h4 className="mb-4 text-lg font-bold text-gray-900">
-                    Daftar Misi:
+                    Misi:
                   </h4>
                   <ol className="space-y-4">
                     {feature.missions.map((misi, index) => (

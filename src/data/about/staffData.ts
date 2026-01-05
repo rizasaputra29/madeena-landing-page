@@ -1,20 +1,12 @@
 export const departmentsData = [
   {
-    id: "leadership",
-    name: "Leadership Team",
+    id: "preschool",
+    name: "Preschool",
   },
   {
-    id: "teachers",
-    name: "Teaching Staff",
-  },
-  {
-    id: "administration",
-    name: "Administration",
-  },
-  {
-    id: "support",
-    name: "Support Staff",
-  },
+    id: "primary",
+    name: "Primary",
+  }
 ];
 
 export const staffData = [

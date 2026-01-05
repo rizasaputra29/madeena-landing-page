@@ -22,10 +22,10 @@ export function FaqAccordion({ items }: FaqAccordionProps) {
     <Accordion type="single" collapsible className="w-full">
       {items.map((item, index) => (
         <AccordionItem key={index} value={`item-${index}`}>
-          <AccordionTrigger className="text-left text-lg font-semibold hover:no-underline">
+          <AccordionTrigger className="text-left text-xl font-semibold hover:no-underline">
             {item.question}
           </AccordionTrigger>
-          <AccordionContent className="text-muted-foreground text-md leading-relaxed">
+          <AccordionContent className="text-muted-foreground text-lg leading-relaxed">
             {item.answer}
           </AccordionContent>
         </AccordionItem>

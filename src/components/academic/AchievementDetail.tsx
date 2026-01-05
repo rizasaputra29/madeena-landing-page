@@ -3,15 +3,17 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, Trophy, Share2, User, School, Medal } from "lucide-react";
+import { ArrowLeft, Trophy, Share2, User, School, Medal, Check } from "lucide-react";
 import { motion } from "framer-motion";
 import type { Achievement } from "~/lib/generated/prisma/client";
+import { useState } from "react";
+import { toast } from "sonner";
 
 import { Button } from "~/components/ui/button";
 import { Badge } from "~/components/ui/badge";
 
 interface AchievementDetailProps {
-  achievement: Achievement; // Menggunakan tipe data dari Prisma
+  achievement: Achievement;
 }
 
 export default function AchievementDetail({
@@ -25,15 +27,50 @@ export default function AchievementDetail({
       ? "/preschool/achievements"
       : "/primary/achievements";
 
-  // Parsing deskripsi dari database (newline -> paragraph)
+  // Parsing deskripsi dari database
   const descriptionParagraphs = achievement.description.split("\n");
 
-  // Parsing nama siswa (Array -> String Comma Separated)
-  const studentNamesDisplay = achievement.studentNames.join(", ");
+  // State untuk feedback tombol share
+  const [isCopied, setIsCopied] = useState(false);
+
+  const handleShare = async () => {
+    const url = window.location.href;
+    const title = `Prestasi ${achievement.title} - Al Madeena Islamic School`;
+    const text = `Lihat prestasi membanggakan ini: ${achievement.title}`;
+
+    // Cek apakah browser mendukung fitur Web Share API
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: title,
+          text: text,
+          url: url,
+        });
+      } catch (error) {
+        // PERBAIKAN: Cek apakah error disebabkan oleh user yang membatalkan share
+        if (error instanceof Error && error.name === "AbortError") {
+          console.log("Share dibatalkan oleh pengguna."); // Log info biasa, bukan error
+          return;
+        }
+        // Log error asli jika ada masalah lain
+        console.error("Error sharing:", error);
+      }
+    } else {
+      // Fallback untuk Desktop: Copy link ke clipboard
+      try {
+        await navigator.clipboard.writeText(url);
+        setIsCopied(true);
+        toast.success("Link berhasil disalin!");
+        setTimeout(() => setIsCopied(false), 2000);
+      } catch (err) {
+        console.error("Failed to copy:", err);
+        toast.error("Gagal menyalin link.");
+      }
+    }
+  };
 
   return (
     <main className="min-h-screen pb-20">
-
       <section className="container mx-auto px-4 py-8 md:px-6 md:py-12">
         {/* Navigation - Outside Grid */}
         <div className="mx-auto mb-6 max-w-7xl">
@@ -48,7 +85,7 @@ export default function AchievementDetail({
 
         {/* BENTO GRID LAYOUT */}
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 md:grid-cols-12 md:gap-6">
-          {/* --- LEFT COLUMN: IMAGE (Span 4 cols on desktop) --- */}
+          {/* --- LEFT COLUMN: IMAGE --- */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -64,7 +101,6 @@ export default function AchievementDetail({
                   className="object-cover"
                   priority
                 />
-                {/* Floating Winner Badge */}
                 <div className="absolute top-4 right-4 flex items-center gap-2 rounded-full bg-white/90 px-3 py-1.5 text-xs font-bold text-yellow-600 shadow-md backdrop-blur-sm md:px-4 md:py-2 md:text-sm">
                   <Trophy className="h-4 w-4 md:h-5 md:w-5" />
                   <span className="uppercase">
@@ -75,7 +111,7 @@ export default function AchievementDetail({
             </div>
           </motion.div>
 
-          {/* --- RIGHT COLUMN: INFO & CONTENT (Span 8 cols on desktop) --- */}
+          {/* --- RIGHT COLUMN: INFO & CONTENT --- */}
           <div className="flex flex-col gap-4 md:col-span-7 md:gap-6 lg:col-span-8">
             {/* 1. Header Card */}
             <motion.div
@@ -97,7 +133,7 @@ export default function AchievementDetail({
               </h1>
             </motion.div>
 
-            {/* 2. Stats Grid (Bento Boxes) */}
+            {/* 2. Stats Grid */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -114,9 +150,10 @@ export default function AchievementDetail({
                 </span>
                 <span
                   className="mt-1 line-clamp-2 text-base font-bold text-gray-900"
-                  title={studentNamesDisplay}
+                  // Pastikan field ini sesuai dengan schema Anda (studentNames / achievementNames)
+                  title={achievement.studentNames.join(", ")}
                 >
-                  {studentNamesDisplay}
+                  {achievement.studentNames.join(", ")}
                 </span>
               </div>
 
@@ -147,7 +184,7 @@ export default function AchievementDetail({
               </div>
             </motion.div>
 
-            {/* 3. Content Card (Dynamic Parsing) */}
+            {/* 3. Content Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -155,7 +192,6 @@ export default function AchievementDetail({
               className="flex-1 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-gray-100 md:p-8"
             >
               <div className="prose prose-lg prose-gray max-w-none text-justify leading-relaxed text-gray-700">
-                {/* Logic: Paragraf pertama diberi styling Drop Cap */}
                 {descriptionParagraphs.map((paragraph, index) => {
                   if (!paragraph.trim()) return null;
 
@@ -201,10 +237,20 @@ export default function AchievementDetail({
               <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
                 <Button
                   variant="outline"
-                  className="w-full rounded-full border-white/30 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto"
+                  onClick={handleShare}
+                  className="w-full rounded-full border-white/30 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto transition-all duration-200"
                 >
-                  <Share2 className="mr-2 h-4 w-4" />
-                  Bagikan
+                  {isCopied ? (
+                    <>
+                      <Check className="mr-2 h-4 w-4" />
+                      Tersalin
+                    </>
+                  ) : (
+                    <>
+                      <Share2 className="mr-2 h-4 w-4" />
+                      Bagikan
+                    </>
+                  )}
                 </Button>
                 <Link href="/registration/flow" className="w-full sm:w-auto">
                   <Button

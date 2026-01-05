@@ -10,10 +10,8 @@ import AboutQuickLinks from "./AboutQuickLinks";
 import { cn } from "~/lib/utils";
 
 const departmentsData = [
-  { id: "leadership", name: "Leadership Team" },
-  { id: "teachers", name: "Teaching Staff" },
-  { id: "administration", name: "Administration" },
-  { id: "support", name: "Support Staff" },
+  { id: "preschool", name: "Preschool" },
+  { id: "primary", name: "Primary" },
 ];
 
 const fastTween = { type: "tween", duration: 0.3, ease: "easeInOut" } as const;
