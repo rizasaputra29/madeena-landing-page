@@ -4,11 +4,21 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
+interface Slide {
+  type: string;
+  src: string;
+  videoUrl?: string;
+  poster?: string;
+  title: string;
+  subtitle: string;
+  description: string;
+}
+
 export default function Hero() {
   const [showModal, setShowModal] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [
+  const slides: Slide[] = [
     {
       type: "video",
       src: "https://res.cloudinary.com/imagehandlers/video/upload/v1767620532/comprof-2.mp4",
@@ -258,7 +268,7 @@ export default function Hero() {
                 playsInline
               >
                 <source
-                  src={(activeSlide as any).videoUrl || activeSlide.src}
+                  src={activeSlide.videoUrl ?? activeSlide.src}
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
