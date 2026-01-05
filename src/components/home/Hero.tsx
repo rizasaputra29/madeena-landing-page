@@ -11,8 +11,9 @@ export default function Hero() {
   const slides = [
     {
       type: "video",
-      src: "https://res.cloudinary.com/imagehandlers/video/upload/v1767462692/Al_Madeena_Islamic_School_1_1_1_sabknb.mp4",
-      poster: "https://res.cloudinary.com/imagehandlers/image/upload/v1767462692/Al_Madeena_Islamic_School_1_1_1_sabknb.mp4",
+      src: "https://res.cloudinary.com/imagehandlers/video/upload/v1767620532/comprof-2.mp4",
+      videoUrl: "https://res.cloudinary.com/imagehandlers/video/upload/v1767462692/Al_Madeena_Islamic_School_1_1_1_sabknb.mp4",
+      poster: "https://res.cloudinary.com/imagehandlers/video/upload/v1767620532/comprof-2.jpg",
       title: "Global Generation",
       subtitle: "Islamic Character",
       description: "Mewujudkan generasi global yang berkarakter Islami, cerdas, dan kompetitif, serta siap menjadi pemimpin masa depan yang Rahmatan Lil Alamin."
@@ -257,7 +258,7 @@ export default function Hero() {
                 playsInline
               >
                 <source
-                  src={activeSlide.src}
+                  src={(activeSlide as any).videoUrl || activeSlide.src}
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
