@@ -17,10 +17,10 @@ export const partnersData = [
   },
   {
     id: 3,
-    src: "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763225560/Logo-Partner-Cerdig-LMS_lp1z7l.png",
-    title: "Cerdig Learning Management System",
+    src: "https://res.cloudinary.com/imagehandlers/image/upload/v1767288988/logo-mentari_wsascm.png",
+    title: "Mentari Publisher",
     description:
-      "Dalam mendukung pembelajaran digital yang interaktif dan terintegrasi, Al Madeena memanfaatkan platform Cerdig LMS. Melalui aplikasi ini, guru dapat merancang pembelajaran berbasis teknologi, memberikan tugas daring, serta memantau perkembangan belajar siswa dengan lebih efektif.",
+      "Al Madeena bekerja sama dengan Mentari Publisher dalam penyediaan sumber belajar berkualitas. Kemitraan ini juga mencakup pelatihan profesional guru untuk memastikan metode pengajaran yang inovatif dan efektif di kelas.",
   },
   {
     id: 4,

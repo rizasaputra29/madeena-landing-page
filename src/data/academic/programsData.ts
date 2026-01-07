@@ -20,7 +20,7 @@ export const programsData = {
         "Menanamkan kecintaan pada Al-Qur'an sejak dini melalui hafalan surat-surat pendek dengan metode leveling. Anak-anak dibimbing agar hafalannya kuat, fasih, dan tertanam dalam hati.",
       icon: BookOpen,
       image:
-        "https://res.cloudinary.com/dah2v3xbg/image/upload/v1765198288/Tahfizh_tki9qv.webp",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767450555/DSCF0358_ocxba2.jpg",
       link: "#",
       cta: "Learn more",
     },
@@ -42,7 +42,7 @@ export const programsData = {
         "Menggunakan bahasa Indonesia dan Inggris dalam aktivitas sehari-hari untuk membiasakan anak berkomunikasi dengan percaya diri di lingkungan global tanpa meninggalkan nilai-nilai Islami.",
       icon: Globe,
       image:
-        "https://res.cloudinary.com/dah2v3xbg/image/upload/v1765198287/Bilingual_bleqlq.webp",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767343945/DSCF1517_hzdp3c.jpg",
       link: "#",
       cta: "Explore language",
     },
@@ -53,7 +53,7 @@ export const programsData = {
         "Pembelajaran berbasis sentra yang melibatkan anak dalam aktivitas bermain sambil belajar sesuai tahap perkembangan — seperti sentra ibadah, seni, balok, persiapan, bahan alam, dan peran. Setiap kegiatan dirancang untuk mengembangkan kecerdasan majemuk anak.",
       icon: Smile,
       image:
-        "https://res.cloudinary.com/dah2v3xbg/image/upload/v1765198288/Sentra_wkhk9p.webp",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767598894/DSCF7741.jpg",
       link: "#",
       cta: "See centers",
     },
@@ -77,7 +77,7 @@ export const programsData = {
         "Menghadirkan program unggulan yang mengintegrasikan pendidikan Islam, kurikulum nasional, dan standar internasional untuk membentuk generasi berilmu, berakhlak, dan siap bersaing di era global.",
       icon: Users,
       image:
-        "https://res.cloudinary.com/dah2v3xbg/image/upload/v1765199924/Integrasi_pendidikan_bqgyvx.webp",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767450012/DSCF7955_rlrj9s.jpg",
       link: "#",
       cta: "Learn more",
     },
@@ -121,42 +121,42 @@ export const programsData = {
         "Menerapkan lingkungan belajar dwibahasa (Bahasa Indonesia dan Bahasa Inggris) untuk menumbuhkan kemampuan komunikasi global.",
       icon: Globe,
       image:
-        "https://res.cloudinary.com/dah2v3xbg/image/upload/v1765199923/Bilingual_bneldc.webp",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767343550/DSCF1514_kvjk2e.jpg",
       link: "#",
       cta: "Explore language",
     },
     {
       id: 6,
-      title: "Cambridge-Based Assessment",
-      description:
-        "Menggunakan sistem penilaian berbasis Cambridge untuk memantau perkembangan akademik siswa sesuai standar internasional.",
-      icon: Award,
-      image:
-        "https://res.cloudinary.com/dah2v3xbg/image/upload/v1765199924/Cambridge_nufd8w.webp",
-      link: "#",
-      cta: "See achievements",
-    },
-    {
-      id: 7,
       title: "Islamic Character Building",
       description:
         "Menanamkan nilai-nilai akhlakul karimah melalui pembiasaan ibadah, adab, dan kegiatan keislaman sehari-hari.",
       icon: Heart,
       image:
-        "https://res.cloudinary.com/dah2v3xbg/image/upload/v1765199924/islamic_oiidu6.webp",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767463949/DSCF8018_r2y6kt.jpg",
       link: "#",
       cta: "Discover values",
     },
     {
-      id: 8,
-      title: "Kurikulum Agama / Madrasah",
+      id: 7,
+      title: "Kurikulum Agama",
       description:
         "Memperkaya pembelajaran dengan kurikulum agama yang komprehensif, mencakup aqidah, fiqih, akhlak, dan sejarah Islam.",
       icon: PenTool,
       image:
-        "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1000&auto=format&fit=crop",
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767450178/IMG-20250822-WA0029_lbt9so.jpg",
       link: "#",
       cta: "View curriculum",
     },
+    {
+      id: 8,
+      title: "Cambridge-Based Assessment",
+      description:
+        "Menggunakan sistem penilaian berbasis Cambridge untuk memantau perkembangan akademik siswa sesuai standar internasional.",
+      icon: Award,
+      image:
+        "https://res.cloudinary.com/imagehandlers/image/upload/v1767448521/cambridge_koz37g.png",
+      link: "#",
+      cta: "See achievements",
+    }
   ],
 };

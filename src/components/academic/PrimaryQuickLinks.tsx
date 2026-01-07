@@ -10,37 +10,37 @@ const quickLinks = [
     title: "Program Unggulan",
     href: "/primary/programs",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763224535/Primary-Academic_yadxyh.webp",
+      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1765199924/Holistic_ix39nv.webp",
   },
   {
     title: "Kurikulum",
     href: "/primary/curriculum",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763224535/Primary-Academic_yadxyh.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767450012/DSCF7955_rlrj9s.jpg",
   },
   {
     title: "Prestasi",
     href: "/primary/achievements",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763224535/Primary-Academic_yadxyh.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767542218/prestasi-2.webp",
   },
   {
     title: "Kegiatan",
     href: "/primary/activities",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763224535/Primary-Academic_yadxyh.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767537054/DSCF0064.jpg",
   },
   {
     title: "Ekstrakurikuler",
     href: "/primary/extracurricular",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763224535/Primary-Academic_yadxyh.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767452130/DSCF0312_jm4cci.jpg",
   },
   {
     title: "Fasilitas",
     href: "/primary/facilities",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763224535/Primary-Academic_yadxyh.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767537873/DSCF0855.jpg",
   },
 ];
 

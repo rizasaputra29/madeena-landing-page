@@ -139,7 +139,7 @@ export default function Testimonials() {
             <motion.div
               key={item.id}
               variants={fadeIn}
-              className="flex h-[400px] flex-col overflow-hidden rounded-3xl bg-white p-6 shadow-lg transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl"
+              className="flex aspect-4/5 flex-col overflow-hidden rounded-3xl bg-white p-6 shadow-lg transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl"
               onClick={() => handleVideoClick(item.id)}
             >
               {/* Card Title (Category) */}
@@ -147,8 +147,8 @@ export default function Testimonials() {
                 {item.type === "Parent"
                   ? "Parents"
                   : item.type === "Student"
-                  ? "Students"
-                  : item.type}
+                    ? "Students"
+                    : item.type}
               </h3>
 
               {/* Video/Image Container */}
@@ -161,7 +161,7 @@ export default function Testimonials() {
                   src={item.image}
                   alt={item.name}
                   fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, 33vh"
                   className={cn(
                     "absolute inset-0 z-10 h-full w-full object-cover transition-opacity duration-300",
                     hoveredId === item.id ? "opacity-0" : "opacity-100"
@@ -190,9 +190,8 @@ export default function Testimonials() {
                     hoveredId === item.id ? "opacity-0" : "opacity-100"
                   )}
                 >
-                  <p className="text-white font-semibold text-lg">{item.name}</p>
-                  <div className="mt-2 h-10 w-10 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm">
-                    <svg className="w-5 h-5 text-white fill-current" viewBox="0 0 24 24">
+                  <div className="mt-2 h-8 w-8 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm">
+                    <svg className="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </div>
@@ -244,14 +243,7 @@ export default function Testimonials() {
                 Your browser does not support the video tag.
               </video>
             </div>
-            <div className="bg-white p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                {selectedTestimonial.name} - {selectedTestimonial.type}
-              </h3>
-              <p className="text-gray-600">
-                &quot;{selectedTestimonial.text}&quot;
-              </p>
-            </div>
+
           </div>
         </div>
       )}

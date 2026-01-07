@@ -31,7 +31,7 @@ export const visionMissionData = [
     label: "VISI & MISI",
     vision: "Global Generation, Islamic Character",
     image:
-      "https://res.cloudinary.com/dah2v3xbg/image/upload/v1763224535/Primary-Academic_yadxyh.webp",
+      "https://res.cloudinary.com/imagehandlers/image/upload/v1767288080/DSCF1489_mk9op2.jpg",
     missions: misiPrimary,
   },
 ];

@@ -2,6 +2,12 @@ import ExtracurricularContent from "~/components/academic/ExtracurricularContent
 import PageHeader from "~/components/common/PageHeader";
 import PreschoolQuickLinks from "~/components/academic/PreschoolQuickLinks";
 
+export const metadata = {
+  title: "Ekstrakurikuler Preschool",
+  description:
+    "Program ekstrakurikuler Al Madeena Preschool: belajar sambil bermain, tumbuh dengan ceria.",
+};
+
 export default function PreschoolExtracurricularPage() {
   return (
     <main>

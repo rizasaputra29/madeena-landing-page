@@ -102,7 +102,7 @@ export default function Curriculum() {
           viewport={{ once: true }}
           className="mb-10 text-center text-4xl font-bold text-white md:text-5xl lg:text-6xl drop-shadow-sm"
         >
-          Kurikulum
+          Curriculum
         </motion.h2>
 
         {/* Tabs */}
@@ -127,7 +127,7 @@ export default function Curriculum() {
                 : "bg-transparent text-white border border-white/50 hover:bg-white/10"
             )}
           >
-            Primary School
+            Primary
           </button>
         </div>
 

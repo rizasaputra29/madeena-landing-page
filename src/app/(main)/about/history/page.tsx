@@ -2,6 +2,12 @@ import PageHeader from "~/components/common/PageHeader";
 import { Timeline, type TimelineEntry } from "~/components/common/Timeline";
 import AboutQuickLinks from "~/components/about/AboutQuickLinks";
 
+export const metadata = {
+  title: "Sejarah Al Madeena",
+  description:
+    "Perjalanan Al Madeena Islamic School dari bimbingan belajar menuju lembaga pendidikan Islam yang unggul dan modern.",
+};
+
 const historyData: TimelineEntry[] = [
   {
     date: "Awal Mula",
@@ -43,10 +49,8 @@ export default function HistoryPage() {
         subtitle="Dari Bimbingan Belajar Menuju Lembaga Pendidikan Islam"
         imageUrl="https://res.cloudinary.com/dah2v3xbg/image/upload/v1763225823/TemplatePageHeader_tnecsg.webp"
       />
-      
-      <Timeline 
-        data={historyData} 
-      />
+
+      <Timeline data={historyData} />
 
       <AboutQuickLinks />
     </div>

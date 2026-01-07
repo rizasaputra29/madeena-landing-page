@@ -1,4 +1,3 @@
-// File: src/middleware.ts
 export const runtime = "nodejs";
 
 import { NextResponse } from "next/server";
@@ -29,5 +28,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api/auth|_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/admin/:path*", "/login"],
 };

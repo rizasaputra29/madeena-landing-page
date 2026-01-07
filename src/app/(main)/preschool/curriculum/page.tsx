@@ -18,7 +18,7 @@ export default function PreschoolCurriculumPage() {
   return (
     <div className="bg-white text-neutral-800">
       <PageHeader
-        title="Early Islamic Character"
+        title="Kurikulum Preschool"
         subtitle="Kami fokus pada penanaman karakter Islami, pengenalan bahasa Inggris, dan proses belajar yang menyenangkan untuk fondasi terbaik anak Anda."
         imageUrl={headerImageUrl}
       />
@@ -29,7 +29,7 @@ export default function PreschoolCurriculumPage() {
         title=""
         subtitle=""
         visualAlt="Gambar anak-anak preschool sedang bermain di kelas"
-        visualImage="https://res.cloudinary.com/dah2v3xbg/image/upload/v1763224680/Preschool-Academic_jt56ik.webp"
+        visualImage="https://res.cloudinary.com/imagehandlers/image/upload/v1767449546/DSCF7742_fiygc4.jpg"
       />
       <PreschoolQuickLinks />
     </div>

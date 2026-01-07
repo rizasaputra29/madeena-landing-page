@@ -18,7 +18,7 @@ export default function PrimaryCurriculumPage() {
   return (
     <div className="bg-white text-neutral-800">
       <PageHeader
-        title="Global & Islamic Excellence"
+        title="Kurikulum Primary"
         subtitle="Program kami memadukan kurikulum nasional dan standar internasional dengan fokus intensif pada Tahfizh dan pembentukan karakter Islami."
         imageUrl={headerImageUrl}
       />
@@ -29,7 +29,7 @@ export default function PrimaryCurriculumPage() {
         title=""
         subtitle=""
         visualAlt="Gambar siswa primary school sedang belajar di depan Smartboard"
-        visualImage="https://res.cloudinary.com/dah2v3xbg/image/upload/v1763224535/Primary-Academic_yadxyh.webp"
+        visualImage="https://res.cloudinary.com/imagehandlers/image/upload/v1767450012/DSCF7955_rlrj9s.jpg"
       />
       <PrimaryQuickLinks />
     </div>

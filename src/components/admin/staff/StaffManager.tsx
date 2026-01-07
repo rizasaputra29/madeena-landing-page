@@ -150,6 +150,7 @@ export function StaffManager() {
       s.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       s.role.toLowerCase().includes(searchQuery.toLowerCase()) ||
       s.nip.toLowerCase().includes(searchQuery.toLowerCase()),
+
   );
 
   return (

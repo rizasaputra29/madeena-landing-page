@@ -41,11 +41,10 @@ const getPublicIdFromUrl = (url: string) => {
 // Skema Validasi untuk Update (Semua field optional)
 const UpdateStaffSchema = z.object({
   name: z.string().min(1).optional(),
-  nip: z.string().min(1).optional(),
   gender: z.enum(["MALE", "FEMALE"]).optional(),
   role: z.string().min(1).optional(),
   department: z
-    .enum(["leadership", "teachers", "administration", "support"])
+    .enum(["preschool", "primary"])
     .optional(),
   quote: z.string().optional(),
   email: z.string().email().optional().or(z.literal("")),
@@ -84,22 +83,6 @@ export async function PATCH(
     }
 
     const dataToUpdate = validation.data;
-
-    // --- Logika Validasi NIP Unik ---
-    // Jika NIP sedang diubah, kita harus memastikan NIP baru belum dipakai orang lain.
-    if (dataToUpdate.nip) {
-      const existingStaffWithNip = await db.staff.findUnique({
-        where: { nip: dataToUpdate.nip },
-      });
-
-      // Jika ditemukan staff dengan NIP tersebut, DAN ID-nya bukan ID staff yang sedang diedit
-      if (existingStaffWithNip && existingStaffWithNip.id !== id) {
-        return NextResponse.json(
-          { error: "NIP sudah digunakan oleh staff lain." },
-          { status: 409 }, // 409 Conflict
-        );
-      }
-    }
 
     // --- Update Database ---
     const updatedStaff = await db.staff.update({

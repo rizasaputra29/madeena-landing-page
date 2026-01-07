@@ -5,14 +5,14 @@ export const curriculumData = {
     {
       id: "pre-1",
       number: "01",
-      title: "Kurikulum Nasional PAUD",
+      title: "Kurikulum Nasional",
       description:
         "Mengacu pada standar nasional pendidikan anak usia dini yang menekankan pada pengembangan enam aspek perkembangan anak.",
     },
     {
       id: "pre-2",
       number: "02",
-      title: "Kurikulum Islam Terpadu",
+      title: "Kurikulum Kekhasan",
       description:
         "Menanamkan nilai-nilai keimanan, akhlak, dan adab Islami dalam setiap kegiatan belajar melalui pembiasaan ibadah harian, doa, dan kisah teladan Rasulullah SAW.",
     },
@@ -21,7 +21,7 @@ export const curriculumData = {
       number: "03",
       title: "Program Qiroati dan Tahfizh",
       description:
-        "Anak dibimbing mengenal huruf hijaiyah, membaca Al-Qur'an dengan metode Qiroati, serta menghafal surat-surat pendek Juz 'Amma dengan cara yang menyenangkan.",
+        "Anak dibimbing mengenal huruf hijaiyah, membaca Al-Qur'an dengan metode Qiroati, serta menghafal Juz 'Amma dengan cara yang menyenangkan.",
     },
     {
       id: "pre-4",
@@ -56,7 +56,7 @@ export const curriculumData = {
     {
       id: "pri-2",
       number: "02",
-      title: "Kurikulum Madrasah",
+      title: "Kurikulum Kekhasan",
       description:
         "Menguatkan aspek keagamaan melalui pelajaran Al-Qur'an Hadits, Fiqih, Akidah Akhlak, Bahasa Arab, dan Sejarah Kebudayaan Islam sehingga siswa memahami dasar-dasar Islam secara menyeluruh.",
     },

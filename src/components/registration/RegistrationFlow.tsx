@@ -21,7 +21,7 @@ const flowSteps = [
   {
     id: 2,
     title: "Pembayaran Biaya Pendaftaran",
-    description: "Melakukan pembayaran biaya pendaftaran melalui transfer bank ke rekening yayasan atau pembayaran tunai di sekolah. Bukti bayar wajib diunggah atau diserahkan.",
+    description: "Melakukan pembayaran biaya pendaftaran melalui transfer bank ke rekening yayasan. Bukti bayar wajib diunggah atau diserahkan.",
     icon: CreditCard,
   },
   {
