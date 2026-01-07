@@ -2,6 +2,11 @@ import PageHeader from "~/components/common/PageHeader";
 import FoundationBoardGridClient from "~/components/about/FoundationBoardGridClient";
 import { db } from "~/server/db";
 
+export const metadata = {
+  title: "Dewan Yayasan",
+  description: "Profil Dewan Pengurus Yayasan Al Madeena Cendekia Muslim.",
+};
+
 export default async function FoundationBoardPage() {
   // Fetch from the new table
   const boardData = await db.foundationMember.findMany({

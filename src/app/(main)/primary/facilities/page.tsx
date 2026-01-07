@@ -2,6 +2,12 @@ import FacilitiesContent from "~/components/academic/FacilitiesContent";
 import PageHeader from "~/components/common/PageHeader";
 import PrimaryQuickLinks from "~/components/academic/PrimaryQuickLinks";
 
+export const metadata = {
+  title: "Fasilitas Primary",
+  description:
+    "Fasilitas modern dan Islami Al Madeena Primary untuk menunjang pembelajaran siswa SD.",
+};
+
 export default function PrimaryFacilitiesPage() {
   return (
     <main>

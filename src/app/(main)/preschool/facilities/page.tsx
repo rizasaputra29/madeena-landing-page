@@ -2,6 +2,12 @@ import FacilitiesContent from "~/components/academic/FacilitiesContent";
 import PageHeader from "~/components/common/PageHeader";
 import PreschoolQuickLinks from "~/components/academic/PreschoolQuickLinks";
 
+export const metadata = {
+  title: "Fasilitas Preschool",
+  description:
+    "Fasilitas modern dan Islami Al Madeena Preschool untuk menunjang pembelajaran anak usia dini.",
+};
+
 export default function PreschoolFacilitiesPage() {
   return (
     <main>

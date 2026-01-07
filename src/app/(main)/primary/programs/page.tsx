@@ -2,6 +2,12 @@ import ProgramsContent from "~/components/academic/ProgramsContent";
 import PageHeader from "~/components/common/PageHeader";
 import PrimaryQuickLinks from "~/components/academic/PrimaryQuickLinks";
 
+export const metadata = {
+  title: "Program Unggulan Primary",
+  description:
+    "Program unggulan Al Madeena Primary: Qiroati, Tahfiz, Bilingual, Cambridge Assessment, dan kurikulum madrasah.",
+};
+
 export default function PrimaryProgramsPage() {
   return (
     <main>

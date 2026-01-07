@@ -1,5 +1,4 @@
 import Navbar from "~/components/common/Navbar";
-import { ReactLenis } from "lenis/react";
 import dynamic from "next/dynamic";
 import { Skeleton } from "~/components/ui/skeleton";
 import { AnalyticsTracker } from "~/components/analytics/AnalyticsTracker";
@@ -14,7 +13,6 @@ export default function LandingPageLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <>
-      <ReactLenis root />
       <Navbar />
       <AnalyticsTracker />
       {children}

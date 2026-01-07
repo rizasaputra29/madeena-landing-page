@@ -42,17 +42,21 @@ export default function Footer() {
         }}
       ></div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-48 pb-8 md:px-8 md:pt-40 md:pb-10 lg:px-10 lg:pt-48 lg:pb-12">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-48 pb-8 md:px-8 md:pt-40 md:pb-10 lg:px-10 lg:pt-32 lg:pb-12">
         <div className="flex flex-col items-start justify-between gap-8 text-white lg:flex-row lg:gap-12">
           <div className="flex w-full flex-col justify-between space-y-6 md:space-y-8 lg:w-1/2">
-            <div className="flex items-center justify-start md:pt-6 lg:pt-0">
+            <div className="flex items-center gap-4 md:pt-6 lg:pt-4">
               <Image
                 src="https://res.cloudinary.com/dah2v3xbg/image/upload/v1761939553/LogoTextHitam_f83bfl.svg"
                 alt="Logo"
-                width={90}
-                height={90}
-                className="h-auto w-24 object-contain"
+                width={64}
+                height={64}
               />
+              <div className="h-12 w-px bg-white/50" />
+              <div className="flex flex-col text-xl leading-tight font-medium text-white">
+                <span>Al Madeena</span>
+                <span className="-mt-1 text-lg">Islamic School</span>
+              </div>
             </div>
 
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 lg:gap-10">
@@ -65,9 +69,9 @@ export default function Footer() {
                       Primary School
                     </h3>
                   </div>
-                  <a 
-                  href="https://maps.app.goo.gl/s8HkHR9vRscxxVfb9"
-                  className="text-sm leading-relaxed text-white/90 md:text-base"
+                  <a
+                    href="https://maps.app.goo.gl/s8HkHR9vRscxxVfb9"
+                    className="text-sm leading-relaxed text-white/90 md:text-base"
                   >
                     Jl. Pamitran No. 7 Kejaksan <br />
                     Kota Cirebon 45123
@@ -104,9 +108,9 @@ export default function Footer() {
                       Pre School
                     </h3>
                   </div>
-                  <a 
-                  href="https://maps.app.goo.gl/8EzbzD2LS6Yy2hyu9"
-                  className="text-sm leading-relaxed text-white/90 md:text-base"
+                  <a
+                    href="https://maps.app.goo.gl/8EzbzD2LS6Yy2hyu9"
+                    className="text-sm leading-relaxed text-white/90 md:text-base"
                   >
                     Jl. KS Tubun No. 29 Kejaksan <br />
                     Kota Cirebon 45123

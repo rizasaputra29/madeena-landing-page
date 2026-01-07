@@ -2,6 +2,12 @@ import ExtracurricularContent from "~/components/academic/ExtracurricularContent
 import PageHeader from "~/components/common/PageHeader";
 import PrimaryQuickLinks from "~/components/academic/PrimaryQuickLinks";
 
+export const metadata = {
+  title: "Ekstrakurikuler Primary",
+  description:
+    "Program ekstrakurikuler Al Madeena Primary: wadah pengembangan bakat dan karakter siswa.",
+};
+
 export default function PrimaryExtracurricularPage() {
   return (
     <main>

@@ -2,13 +2,19 @@ import ActivitiesContent from "~/components/academic/ActivitiesContent";
 import PageHeader from "~/components/common/PageHeader";
 import PreschoolQuickLinks from "~/components/academic/PreschoolQuickLinks";
 
+export const metadata = {
+  title: "Kegiatan Preschool",
+  description:
+    "Kegiatan akademik dan karakter Al Madeena Preschool untuk mengembangkan potensi anak.",
+};
+
 export default function PreschoolActivitiesPage() {
   return (
     <main>
-      <PageHeader 
-        title="Kegiatan Preschool" 
+      <PageHeader
+        title="Kegiatan Preschool"
         subtitle="Mengembangkan Potensi Akademik dan Karakter"
-        imageUrl="https://res.cloudinary.com/dah2v3xbg/image/upload/v1763225823/TemplatePageHeader_tnecsg.webp" 
+        imageUrl="https://res.cloudinary.com/dah2v3xbg/image/upload/v1763225823/TemplatePageHeader_tnecsg.webp"
       />
       <ActivitiesContent category="preschool" />
       <PreschoolQuickLinks />
