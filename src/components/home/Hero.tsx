@@ -105,7 +105,7 @@ export default function Hero() {
             ) : (
               <Image
                 src={activeSlide.src}
-                alt={activeSlide.title || "Hero Background"}
+                alt={activeSlide.title || "Suasana Sekolah di Al Madeena"}
                 fill
                 sizes="100vw"
                 className="object-cover"
@@ -226,12 +226,12 @@ export default function Hero() {
           >
             {/* Column 1: Title (Approx 4 cols) */}
             <div className="lg:col-span-4">
-              <h2 className="text-3xl leading-tight font-bold text-white md:text-5xl">
+              <h1 className="text-3xl leading-tight font-bold text-white md:text-5xl">
                 {activeSlide.title}
                 <span className="mt-2 block text-xl font-normal opacity-80 md:text-3xl">
                   {activeSlide.subtitle}
                 </span>
-              </h2>
+              </h1>
             </div>
 
             {/* Column 2: Description (Approx 5 cols) */}

@@ -57,12 +57,12 @@ export default function Navbar({ forceSolid }: NavbarProps) {
           : "bg-transparent text-white",
       )}
     >
-      <div className="container mx-auto flex h-24 items-center justify-between gap-6 md:pt-0 pt-2">
+      <div className="container mx-auto flex h-24 items-center justify-between gap-6 pt-2 md:pt-0">
         <div className="flex h-full items-center gap-3">
           <Image
             src="https://res.cloudinary.com/dah2v3xbg/image/upload/v1761939553/LogoTextHitam_f83bfl.svg"
-            alt="Logo"
-            width={52} 
+            alt="Logo Al Madeena"
+            width={52}
             height={52}
             priority
           />
@@ -73,15 +73,15 @@ export default function Navbar({ forceSolid }: NavbarProps) {
               !useTransparentStyle ? "bg-gray-300" : "bg-white/50",
             )}
           />
-          <div className="flex flex-col leading-tight font-medium text-lg"> 
+          <div className="flex flex-col text-lg leading-tight font-medium">
             <span>Al Madeena</span>
-            <span className="-mt-1 text-base">Islamic School</span> 
+            <span className="-mt-1 text-base">Islamic School</span>
           </div>
         </div>
 
         <div className="-mb-1 flex items-center gap-2">
           <NavigationMenu viewport={false} className="h-full max-lg:hidden">
-            <NavigationMenuList className="h-full gap-2"> 
+            <NavigationMenuList className="h-full gap-2">
               {navigationLinks.map((link, index) => {
                 const isActive =
                   link.href === pathname ||
@@ -95,7 +95,7 @@ export default function Navbar({ forceSolid }: NavbarProps) {
                           data-active={isActive}
                           className={cn(
                             navigationMenuTriggerStyle(),
-                            "group h-full cursor-pointer rounded-t-lg rounded-b-none border-transparent bg-transparent px-4 py-1.5 pb-3 font-medium transition-all text-[15px]", // Text size 15px
+                            "group h-full cursor-pointer rounded-t-lg rounded-b-none border-transparent bg-transparent px-4 py-1.5 pb-3 text-[15px] font-medium transition-all", // Text size 15px
                             "hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent",
                             !useTransparentStyle
                               ? "text-gray-800 after:bg-gray-900 hover:text-gray-900 focus:text-gray-900 focus-visible:ring-gray-900/40 data-[state=open]:text-gray-900"
@@ -114,7 +114,7 @@ export default function Navbar({ forceSolid }: NavbarProps) {
                         <NavigationMenuContent className="rounded-sm">
                           <ul
                             className={cn(
-                              "mt-0 border-0 bg-white text-gray-800 shadow-none md:min-w-72", 
+                              "mt-0 border-0 bg-white text-gray-800 shadow-none md:min-w-72",
                             )}
                           >
                             {link.items.map((item, itemIndex) => {
@@ -130,7 +130,7 @@ export default function Navbar({ forceSolid }: NavbarProps) {
                                     href={item.href}
                                     data-active={item.href === pathname}
                                     className={cn(
-                                      "block p-3 text-[15px]", 
+                                      "block p-3 text-[15px]",
                                       "text-gray-700 transition-colors",
                                       "hover:bg-gray-100 hover:text-gray-900",
                                       "focus:bg-gray-100 focus:text-gray-900 focus:outline-none",
@@ -167,7 +167,7 @@ export default function Navbar({ forceSolid }: NavbarProps) {
                         href={link.href ?? "#"}
                         data-active={isActive}
                         className={cn(
-                          "group relative flex h-full flex-row items-center justify-center rounded-none border-transparent bg-transparent px-4 py-1.5 pb-3 font-medium text-[15px]", // Text size 15px
+                          "group relative flex h-full flex-row items-center justify-center rounded-none border-transparent bg-transparent px-4 py-1.5 pb-3 text-[15px] font-medium", // Text size 15px
                           "transition-colors outline-none focus-visible:ring-[3px]",
                           "hover:bg-transparent focus:bg-transparent",
                           !useTransparentStyle

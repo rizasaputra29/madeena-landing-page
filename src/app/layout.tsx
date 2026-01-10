@@ -46,6 +46,9 @@ export const metadata: Metadata = {
     locale: "id_ID",
     type: "website",
   },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 const onest = Onest({

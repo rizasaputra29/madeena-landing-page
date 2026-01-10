@@ -108,7 +108,7 @@ export function LoginForm({
           <div className="bg-muted relative hidden h-full min-h-[400px] md:block">
             <Image
               src="https://res.cloudinary.com/dah2v3xbg/image/upload/w_3824,q_auto:good,f_auto/v1761338343/DSCF7772_1_nwjcdw.webp"
-              alt="Al Madeena Students"
+              alt="Siswa Al Madeena"
               fill
               style={{ objectFit: "cover" }}
               className="dark:brightness-[0.2] dark:grayscale"

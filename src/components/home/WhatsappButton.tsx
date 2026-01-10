@@ -68,7 +68,7 @@ export default function WhatsAppButton() {
                 href={`https://wa.me/${option.number}?text=${message}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between gap-3 rounded-full bg-white py-2 pl-4 pr-2 shadow-lg transition-transform hover:scale-105 hover:shadow-xl"
+                className="flex items-center justify-between gap-3 rounded-full bg-white py-2 pr-2 pl-4 shadow-lg transition-transform hover:scale-105 hover:shadow-xl"
               >
                 <span className={`text-base font-semibold ${option.color}`}>
                   {option.label}
@@ -76,7 +76,7 @@ export default function WhatsAppButton() {
                 <div className="relative h-10 w-10 shrink-0">
                   <Image
                     src="https://res.cloudinary.com/dah2v3xbg/image/upload/v1765193910/WhatsApp_uktdmq.webp"
-                    alt="WhatsApp"
+                    alt="Ikon WhatsApp"
                     fill
                     className="object-contain"
                   />
@@ -96,7 +96,7 @@ export default function WhatsAppButton() {
         <div className="relative flex h-12 w-12 shrink-0 items-center justify-center transition-transform duration-300 group-hover:scale-110">
           <Image
             src="https://res.cloudinary.com/dah2v3xbg/image/upload/v1765193910/WhatsApp_uktdmq.webp"
-            alt="WhatsApp Contact"
+            alt="Kontak WhatsApp"
             fill
             className="object-contain"
             sizes="48px"

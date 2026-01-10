@@ -115,11 +115,11 @@ export default function StaffGridClient({ staffList }: StaffGridClientProps) {
                   </div>
 
                   {/* Info Section - Hanya Nama dan Role */}
-                  <div className=" p-3">
+                  <div className="p-3">
                     <div className="mb-2 border-b border-gray-900 pb-2 text-center">
-                       <Image
+                      <Image
                         src="https://res.cloudinary.com/dah2v3xbg/image/upload/v1761844689/Logo_Footer_mdjaax.svg"
-                        alt="Logo"
+                        alt="Logo Al Madeena"
                         width={240}
                         height={60}
                         className="mx-auto h-auto w-full max-w-40 object-contain"

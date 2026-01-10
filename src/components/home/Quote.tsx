@@ -51,12 +51,11 @@ export default function Quote() {
     <section ref={sectionRef} className="relative z-20 w-full">
       {/* The White Card Container */}
       <div className="relative -mt-24 flex min-h-screen flex-col overflow-hidden rounded-t-[3rem] bg-white pt-24 pb-24 md:-mt-32 md:rounded-t-[5rem] md:pt-32 md:pb-32 lg:rounded-t-[80px]">
-        
         {/* --- ScrollLine Component (Left) --- */}
         {/* UPDATED: Hidden on mobile, visible on desktop (md+) */}
         <ScrollLine
           containerRef={sectionRef}
-          className="hidden md:block absolute z-10 md:top-10 md:left-0 md:w-[280px] md:-translate-y-12 lg:w-[348px]"
+          className="absolute z-10 hidden md:top-10 md:left-0 md:block md:w-[280px] md:-translate-y-12 lg:w-[348px]"
           start="top 85%"
           end="center center"
         />
@@ -93,7 +92,7 @@ export default function Quote() {
             {/* Static Logo */}
             <Image
               src="https://res.cloudinary.com/dah2v3xbg/image/upload/v1763885433/logo-without-text_iuydhz.svg"
-              alt="Al Madeena Logo"
+              alt="Logo Al Madeena"
               fill
               className="object-contain"
             />
@@ -101,7 +100,7 @@ export default function Quote() {
             <div className="absolute inset-0 animate-[spin_20s_linear_infinite]">
               <Image
                 src="https://res.cloudinary.com/dah2v3xbg/image/upload/v1763885433/outer-text-logo_plu5w0.svg"
-                alt="Text Ring"
+                alt="Lingkaran Teks Logo"
                 fill
                 className="object-contain"
               />
@@ -111,8 +110,9 @@ export default function Quote() {
           <h2 className="mb-3 font-sans text-2xl leading-relaxed font-bold text-gray-900 sm:mb-4 sm:text-3xl md:text-4xl lg:text-6xl">
             Growing Global Generation <br></br> with Islamic Character
           </h2>
-          <p className="max-w-2xl leading-relaxed font-medium text-gray-600 text-xl md:text-2xl">
-            Empowering students to become intelligent, good manner, and future leaders
+          <p className="max-w-2xl text-xl leading-relaxed font-medium text-gray-600 md:text-2xl">
+            Empowering students to become intelligent, good manner, and future
+            leaders
           </p>
         </div>
       </div>

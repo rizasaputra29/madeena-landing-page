@@ -52,7 +52,8 @@ type IconName = keyof typeof iconMap;
 
 function ItemIcon({ name }: { name?: string }) {
   // Pastikan name valid dan ada di iconMap, jika tidak gunakan Info sebagai default
-  const Icon = name && iconMap[name as IconName] ? iconMap[name as IconName] : Info;
+  const Icon =
+    name && iconMap[name as IconName] ? iconMap[name as IconName] : Info;
   return (
     <span className="mr-2 inline-flex size-8 flex-none items-center justify-center rounded-lg bg-neutral-100 ring-1 ring-neutral-200 ring-inset">
       <Icon className="size-4 text-neutral-700" aria-hidden="true" />
@@ -112,7 +113,7 @@ export function MobileNav({
         <div className="z-10 flex flex-none items-center justify-between border-b border-neutral-200 bg-white/90 px-4 py-3 backdrop-blur">
           <Image
             src={"/web-app-manifest-192x192.png"}
-            alt="Logo"
+            alt="Logo Al Madeena"
             width={64}
             height={64}
           />

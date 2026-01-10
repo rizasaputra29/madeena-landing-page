@@ -48,7 +48,7 @@ export default function Footer() {
             <div className="flex items-center gap-4 md:pt-6 lg:pt-4">
               <Image
                 src="https://res.cloudinary.com/dah2v3xbg/image/upload/v1761939553/LogoTextHitam_f83bfl.svg"
-                alt="Logo"
+                alt="Logo Al Madeena"
                 width={64}
                 height={64}
               />
