@@ -7,11 +7,7 @@ export interface Staff {
   gender: Gender;
   role: string;
   department: string;
-  quote: string | null;
-  email: string | null;
-  instagram: string | null;
   imageUrl: string | null;
-  bio: string | null;
   order: number;
   isActive: boolean;
   createdAt: string;
@@ -23,11 +19,7 @@ export interface CreateStaffBody {
   gender: Gender;
   role: string;
   department: string;
-  quote?: string;
-  email?: string;
-  instagram?: string;
   imageUrl?: string;
-  bio?: string;
   isActive?: boolean;
 }
 
@@ -36,11 +28,7 @@ export interface UpdateStaffBody {
   gender?: Gender;
   role?: string;
   department?: string;
-  quote?: string;
-  email?: string;
-  instagram?: string;
   imageUrl?: string;
-  bio?: string;
   isActive?: boolean;
   order?: number;
 }

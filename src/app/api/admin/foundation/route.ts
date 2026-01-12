@@ -5,22 +5,13 @@ import { auth } from "~/lib/auth";
 import { db } from "~/server/db";
 import { revalidatePath } from "next/cache";
 
-// Schema Validasi untuk Foundation Member
 const FoundationSchema = z.object({
   name: z.string().min(1, "Nama tidak boleh kosong"),
   gender: z.enum(["MALE", "FEMALE"], {
     error: "Gender harus MALE atau FEMALE",
   }),
   role: z.string().min(1, "Jabatan tidak boleh kosong"),
-  quote: z.string().optional(),
-  email: z
-    .string()
-    .email("Format email tidak valid")
-    .optional()
-    .or(z.literal("")),
-  instagram: z.string().optional(),
   imageUrl: z.string().optional(),
-  bio: z.string().optional(),
   isActive: z.boolean().default(true),
 });
 
@@ -70,17 +61,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const {
-      name,
-      gender,
-      role,
-      quote,
-      email,
-      instagram,
-      imageUrl,
-      bio,
-      isActive,
-    } = validation.data;
+    const { name, gender, role, imageUrl, isActive } = validation.data;
 
     const lastItem = await db.foundationMember.findFirst({
       orderBy: { order: "desc" },
@@ -94,11 +75,7 @@ export async function POST(request: Request) {
         name,
         gender,
         role,
-        quote,
-        email: email === "" ? null : email,
-        instagram,
         imageUrl,
-        bio,
         isActive,
         order: newOrder,
       },

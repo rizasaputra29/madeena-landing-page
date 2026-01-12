@@ -14,7 +14,7 @@ import {
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { Label } from "~/components/ui/label";
-import { Textarea } from "~/components/ui/textarea";
+
 import {
   Select,
   SelectContent,
@@ -31,10 +31,8 @@ const formSchema = z.object({
   gender: z.enum(["MALE", "FEMALE"]),
   role: z.string().min(1, "Jabatan wajib diisi"),
   department: z.string().min(1, "Departemen wajib dipilih"),
-  quote: z.string().optional(),
-  email: z.string().email("Email tidak valid").optional().or(z.literal("")),
-  instagram: z.string().optional(),
   imageUrl: z.string().optional(),
+
   isActive: z.boolean().default(true),
 });
 
@@ -49,7 +47,7 @@ interface StaffFormDialogProps {
 
 const DEPARTMENTS = [
   { value: "preschool", label: "Preschool" },
-  { value: "primary", label: "Primary" }
+  { value: "primary", label: "Primary" },
 ];
 
 export function StaffFormDialog({
@@ -63,9 +61,6 @@ export function StaffFormDialog({
     gender: "MALE",
     role: "",
     department: "",
-    quote: "",
-    email: "",
-    instagram: "",
     imageUrl: "",
     isActive: true,
   });
@@ -79,9 +74,6 @@ export function StaffFormDialog({
           gender: initialData.gender as "MALE" | "FEMALE",
           role: initialData.role,
           department: initialData.department,
-          quote: initialData.quote ?? "",
-          email: initialData.email ?? "",
-          instagram: initialData.instagram ?? "",
           imageUrl: initialData.imageUrl ?? "",
           isActive: initialData.isActive,
         });
@@ -91,9 +83,6 @@ export function StaffFormDialog({
           gender: "MALE",
           role: "",
           department: "",
-          quote: "",
-          email: "",
-          instagram: "",
           imageUrl: "",
           isActive: true,
         });
@@ -162,18 +151,18 @@ export function StaffFormDialog({
         </DialogHeader>
 
         <form onSubmit={handleSubmit} className="space-y-6 py-4">
-            <div className="space-y-2">
-              <Label htmlFor="name">
-                Nama Lengkap<span className="-ml-1.5 text-red-500">*</span>
-              </Label>
-              <Input
-                id="name"
-                value={formData.name}
-                onChange={(e) => handleChange("name", e.target.value)}
-                placeholder="Contoh: Budi Santoso, S.Pd"
-                required
-              />
-            </div>
+          <div className="space-y-2">
+            <Label htmlFor="name">
+              Nama Lengkap<span className="-ml-1.5 text-red-500">*</span>
+            </Label>
+            <Input
+              id="name"
+              value={formData.name}
+              onChange={(e) => handleChange("name", e.target.value)}
+              placeholder="Contoh: Budi Santoso, S.Pd"
+              required
+            />
+          </div>
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="space-y-2">
@@ -242,40 +231,6 @@ export function StaffFormDialog({
               Disarankan rasio 3:4 atau 1:1. Jika kosong, akan menggunakan
               avatar default sesuai gender.
             </p>
-          </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="quote">Kutipan / Motto (Opsional)</Label>
-            <Textarea
-              id="quote"
-              value={formData.quote}
-              onChange={(e) => handleChange("quote", e.target.value)}
-              placeholder="Kata-kata mutiara singkat..."
-              rows={2}
-            />
-          </div>
-
-          {/* --- Kontak --- */}
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <div className="space-y-2">
-              <Label htmlFor="email">Email (Opsional)</Label>
-              <Input
-                id="email"
-                type="email"
-                value={formData.email}
-                onChange={(e) => handleChange("email", e.target.value)}
-                placeholder="nama@sekolah.sch.id"
-              />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="instagram">Instagram (Opsional)</Label>
-              <Input
-                id="instagram"
-                value={formData.instagram}
-                onChange={(e) => handleChange("instagram", e.target.value)}
-                placeholder="@username"
-              />
-            </div>
           </div>
 
           {/* --- Status --- */}

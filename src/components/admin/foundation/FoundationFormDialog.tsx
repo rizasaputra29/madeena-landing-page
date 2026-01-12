@@ -14,7 +14,7 @@ import {
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { Label } from "~/components/ui/label";
-import { Textarea } from "~/components/ui/textarea";
+
 import {
   Select,
   SelectContent,
@@ -28,14 +28,9 @@ import type { FoundationMember } from "~/types/foundation";
 
 const formSchema = z.object({
   name: z.string().min(1, "Nama wajib diisi"),
-  // No NIP validation
   gender: z.enum(["MALE", "FEMALE"]),
   role: z.string().min(1, "Jabatan wajib diisi"),
-  quote: z.string().optional(),
-  email: z.string().email("Email tidak valid").optional().or(z.literal("")),
-  instagram: z.string().optional(),
   imageUrl: z.string().optional(),
-  bio: z.string().optional(),
   isActive: z.boolean().default(true),
 });
 
@@ -58,11 +53,7 @@ export function FoundationFormDialog({
     name: "",
     gender: "MALE",
     role: "",
-    quote: "",
-    email: "",
-    instagram: "",
     imageUrl: "",
-    bio: "",
     isActive: true,
   });
   const [isLoading, setIsLoading] = useState(false);
@@ -74,11 +65,7 @@ export function FoundationFormDialog({
           name: initialData.name,
           gender: initialData.gender as "MALE" | "FEMALE",
           role: initialData.role,
-          quote: initialData.quote ?? "",
-          email: initialData.email ?? "",
-          instagram: initialData.instagram ?? "",
           imageUrl: initialData.imageUrl ?? "",
-          bio: initialData.bio ?? "",
           isActive: initialData.isActive,
         });
       } else {
@@ -86,11 +73,7 @@ export function FoundationFormDialog({
           name: "",
           gender: "MALE",
           role: "",
-          quote: "",
-          email: "",
-          instagram: "",
           imageUrl: "",
-          bio: "",
           isActive: true,
         });
       }
@@ -173,7 +156,7 @@ export function FoundationFormDialog({
                   handleChange("gender", val as "MALE" | "FEMALE")
                 }
               >
-                <SelectTrigger>
+                <SelectTrigger className="w-full">
                   <SelectValue placeholder="Pilih Gender" />
                 </SelectTrigger>
                 <SelectContent>
@@ -203,46 +186,6 @@ export function FoundationFormDialog({
               value={formData.imageUrl ?? ""}
               onChange={(url) => handleChange("imageUrl", url)}
             />
-          </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="quote">Kutipan (Opsional)</Label>
-            <Textarea
-              id="quote"
-              value={formData.quote}
-              onChange={(e) => handleChange("quote", e.target.value)}
-              placeholder="Motto atau kutipan..."
-            />
-          </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="bio">Biografi (Opsional)</Label>
-            <Textarea
-              id="bio"
-              value={formData.bio}
-              onChange={(e) => handleChange("bio", e.target.value)}
-              placeholder="Biografi singkat..."
-            />
-          </div>
-
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <div className="space-y-2">
-              <Label htmlFor="email">Email (Opsional)</Label>
-              <Input
-                id="email"
-                type="email"
-                value={formData.email}
-                onChange={(e) => handleChange("email", e.target.value)}
-              />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="instagram">Instagram (Opsional)</Label>
-              <Input
-                id="instagram"
-                value={formData.instagram}
-                onChange={(e) => handleChange("instagram", e.target.value)}
-              />
-            </div>
           </div>
 
           <div className="flex items-center justify-between rounded-lg border p-4">

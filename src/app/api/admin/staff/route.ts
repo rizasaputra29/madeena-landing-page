@@ -11,16 +11,8 @@ const StaffSchema = z.object({
     error: "Gender harus MALE atau FEMALE",
   }),
   role: z.string().min(1, "Jabatan tidak boleh kosong"),
-  department: z.string().min(1, "Departemen wajib dipilih"), 
-  quote: z.string().optional(),
-  email: z
-    .string()
-    .email("Format email tidak valid")
-    .optional()
-    .or(z.literal("")),
-  instagram: z.string().optional(),
+  department: z.string().min(1, "Departemen wajib dipilih"),
   imageUrl: z.string().optional(),
-  bio: z.string().optional(),
   isActive: z.boolean().default(true),
 });
 
@@ -70,18 +62,8 @@ export async function POST(request: Request) {
       );
     }
 
-    const {
-      name,
-      gender,
-      role,
-      department,
-      quote,
-      email,
-      instagram,
-      imageUrl,
-      bio,
-      isActive,
-    } = validation.data;
+    const { name, gender, role, department, imageUrl, isActive } =
+      validation.data;
 
     const lastStaff = await db.staff.findFirst({
       orderBy: { order: "desc" },
@@ -99,11 +81,7 @@ export async function POST(request: Request) {
         gender,
         role,
         department,
-        quote,
-        email: email === "" ? null : email,
-        instagram,
         imageUrl,
-        bio,
         isActive,
         order: newOrder,
       },

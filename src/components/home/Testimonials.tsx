@@ -109,20 +109,20 @@ export default function Testimonials() {
   return (
     <section className="relative w-full overflow-hidden bg-[#F5C546] py-20 md:py-32">
       {/* --- Background Decorations --- */}
-      <div className="absolute inset-0 pointer-events-none">
-        <DecorationQuote className="absolute top-10 left-6 w-24 h-24 md:top-16 md:left-20 md:w-32 md:h-32" />
+      <div className="pointer-events-none absolute inset-0">
+        <DecorationQuote className="absolute top-10 left-6 h-24 w-24 md:top-16 md:left-20 md:h-32 md:w-32" />
         <DecorationCircleWhite className="absolute top-16 right-10 md:top-24 md:right-32" />
-        <DecorationStarWhite className="absolute bottom-12 left-8 w-12 h-12 md:bottom-20 md:left-32" />
-        <DecorationQuoteInverted className="absolute bottom-10 right-6 w-24 h-24 md:bottom-16 md:right-20 md:w-32 md:h-32" />
+        <DecorationStarWhite className="absolute bottom-12 left-8 h-12 w-12 md:bottom-20 md:left-32" />
+        <DecorationQuoteInverted className="absolute right-6 bottom-10 h-24 w-24 md:right-20 md:bottom-16 md:h-32 md:w-32" />
       </div>
 
-      <div className="container relative z-10 mx-auto px-6">
+      <div className="relative z-10 container mx-auto px-6">
         {/* Header */}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-12 text-center text-4xl font-bold text-white md:text-5xl lg:text-6xl drop-shadow-sm"
+          className="mb-12 text-center text-4xl font-bold text-white drop-shadow-sm md:text-5xl lg:text-6xl"
         >
           Testimonials
         </motion.h2>
@@ -153,7 +153,7 @@ export default function Testimonials() {
 
               {/* Video/Image Container */}
               <div
-                className="relative flex-1 w-full overflow-hidden rounded-2xl bg-black cursor-pointer group"
+                className="group relative w-full flex-1 cursor-pointer overflow-hidden rounded-2xl bg-black"
                 onMouseEnter={() => handleMouseEnter(item.id)}
                 onMouseLeave={() => handleMouseLeave(item.id)}
               >
@@ -164,7 +164,7 @@ export default function Testimonials() {
                   sizes="(max-width: 768px) 100vw, 33vh"
                   className={cn(
                     "absolute inset-0 z-10 h-full w-full object-cover transition-opacity duration-300",
-                    hoveredId === item.id ? "opacity-0" : "opacity-100"
+                    hoveredId === item.id ? "opacity-0" : "opacity-100",
                   )}
                 />
                 <video
@@ -173,7 +173,7 @@ export default function Testimonials() {
                   }}
                   className={cn(
                     "absolute inset-0 z-0 h-full w-full object-cover transition-opacity duration-300",
-                    hoveredId === item.id ? "opacity-100" : "opacity-0"
+                    hoveredId === item.id ? "opacity-100" : "opacity-0",
                   )}
                   loop
                   muted
@@ -186,12 +186,15 @@ export default function Testimonials() {
                 {/* Overlay Text inside Video */}
                 <div
                   className={cn(
-                    "absolute inset-0 z-20 flex flex-col items-center justify-end p-6 bg-linear-to-t from-black/80 via-black/20 to-transparent transition-opacity duration-300",
-                    hoveredId === item.id ? "opacity-0" : "opacity-100"
+                    "absolute inset-0 z-20 flex flex-col items-center justify-end bg-linear-to-t from-black/80 via-black/20 to-transparent p-6 transition-opacity duration-300",
+                    hoveredId === item.id ? "opacity-0" : "opacity-100",
                   )}
                 >
-                  <div className="mt-2 h-8 w-8 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm">
-                    <svg className="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                  <div className="mt-2 flex h-8 w-8 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm">
+                    <svg
+                      className="h-4 w-4 fill-current text-white"
+                      viewBox="0 0 24 24"
+                    >
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </div>
@@ -209,7 +212,7 @@ export default function Testimonials() {
           onClick={handleCloseModal}
         >
           <div
-            className="relative w-full max-w-4xl cursor-default overflow-hidden rounded-2xl bg-black shadow-2xl"
+            className="relative w-full max-w-md cursor-default overflow-hidden rounded-2xl bg-black shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -231,7 +234,7 @@ export default function Testimonials() {
                 />
               </svg>
             </button>
-            <div className="aspect-video">
+            <div className="aspect-9/16">
               <video
                 ref={modalVideoRef}
                 className="h-full w-full"
@@ -243,7 +246,6 @@ export default function Testimonials() {
                 Your browser does not support the video tag.
               </video>
             </div>
-
           </div>
         </div>
       )}

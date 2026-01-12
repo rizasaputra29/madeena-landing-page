@@ -34,11 +34,7 @@ const UpdateFoundationSchema = z.object({
   name: z.string().min(1).optional(),
   gender: z.enum(["MALE", "FEMALE"]).optional(),
   role: z.string().min(1).optional(),
-  quote: z.string().optional(),
-  email: z.string().email().optional().or(z.literal("")),
-  instagram: z.string().optional(),
   imageUrl: z.string().optional(),
-  bio: z.string().optional(),
   isActive: z.boolean().optional(),
   order: z.number().optional(),
 });
@@ -74,7 +70,6 @@ export async function PATCH(
       where: { id },
       data: {
         ...dataToUpdate,
-        email: dataToUpdate.email === "" ? null : dataToUpdate.email,
       },
     });
 
