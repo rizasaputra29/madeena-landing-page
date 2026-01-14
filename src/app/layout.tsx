@@ -6,7 +6,7 @@ import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_APP_URL ?? "https://almadeenaislamicschool.sch.id",
+    process.env.NEXT_PUBLIC_APP_URL ?? "https://almadeenaislamicschool.sch.id/",
   ),
   title: {
     default: "Al Madeena Islamic School",

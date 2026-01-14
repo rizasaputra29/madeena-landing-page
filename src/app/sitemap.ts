@@ -4,7 +4,7 @@ import { db } from "~/server/db";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl =
-    process.env.NEXT_PUBLIC_APP_URL ?? "https://almadeenaislamicschool.sch.id";
+    process.env.NEXT_PUBLIC_APP_URL ?? "https://almadeenaislamicschool.sch.id/";
 
   // Extract routes from navigationLinks
   const routes = navigationLinks.flatMap((item) => {
