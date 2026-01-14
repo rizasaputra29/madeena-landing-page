@@ -63,6 +63,7 @@ export default function RootLayout({
     <html lang="id" className={`${onest.className}`} suppressHydrationWarning>
       <head>
         <meta name="apple-mobile-web-app-title" content="Al Madeena" />
+        <meta name="google-site-verification" content="Pr1P-hGnpOBxmsQhyx2mE5z12Quger7LOY31NUJ2F1U" />
       </head>
       <body suppressHydrationWarning>
         {children}
