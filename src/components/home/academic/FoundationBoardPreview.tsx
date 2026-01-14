@@ -12,7 +12,7 @@ export default function FoundationBoardPreview({ data }: { data: FoundationMembe
   const displayData = data.slice(0, 3);
 
   return (
-    <div className="w-full pt-10 pb-2 md:pt-20 md:pb-4">
+    <div className="w-full p-2 md:p-4">
       {displayData.length === 0 ? (
         <div className="text-center text-white/80">Belum ada data yayasan.</div>
       ) : (
@@ -29,7 +29,7 @@ export default function FoundationBoardPreview({ data }: { data: FoundationMembe
             >
               {/* STYLING EXACTLY AS REQUESTED: 
                   flex-1 to push content up */}
-              <div className="flex flex-1 items-center gap-4 pb-6">
+              <div className="flex flex-1 items-center gap-4">
                 <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full border-2 border-white/30">
                   {member.imageUrl ? (
                     <Image
@@ -61,7 +61,7 @@ export default function FoundationBoardPreview({ data }: { data: FoundationMembe
         </div>
       )}
 
-      <div className="mt-12 text-center md:mt-24">
+      <div className="mt-4 md:mt-8 text-center">
         <Link
           href="/about/foundation-board"
           className="group inline-flex items-center text-sm font-semibold text-white transition-opacity hover:opacity-80 hover:underline md:text-base"

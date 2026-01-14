@@ -109,7 +109,7 @@ export default function HistoryTimeline() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
           // UPDATED: Reduced margin-top (was mt-16 md:mt-32)
-          className="py-6 md:mt-24"
+          className="pt-6 md:mt-20"
         >
           <Link
             href="/about/history"

@@ -19,7 +19,7 @@ export default function StaffPreview({ data }: { data: Staff[] }) {
   const staffPreview = data.slice(0, 4);
 
   return (
-    <div className="w-full pt-10 pb-2 md:pt-20 md:pb-4">
+    <div className="w-full p-2 md:p-4">
       {staffPreview.length === 0 ? (
         <div className="text-center text-white/80">Belum ada data staff.</div>
       ) : (
@@ -67,7 +67,7 @@ export default function StaffPreview({ data }: { data: Staff[] }) {
         </div>
       )}
 
-      <div className="mt-12 md:mt-24 text-center">
+      <div className="mt-4 md:mt-8 text-center justify-end">
         <Link
           href="/about/staff-profile"
           className="group inline-flex items-center text-sm font-semibold text-white transition-opacity hover:opacity-80 md:text-base hover:underline"

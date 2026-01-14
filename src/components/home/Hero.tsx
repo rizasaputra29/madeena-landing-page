@@ -25,7 +25,7 @@ export default function Hero() {
       videoUrl:
         "https://res.cloudinary.com/imagehandlers/video/upload/v1767462692/Al_Madeena_Islamic_School_1_1_1_sabknb.mp4",
       poster:
-        "https://res.cloudinary.com/imagehandlers/video/upload/v1767620532/comprof-2.jpg",
+        "",
       title: "Global Generation",
       subtitle: "Islamic Character",
       description:

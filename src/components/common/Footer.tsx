@@ -87,7 +87,7 @@ export default function Footer() {
                     className="flex items-center gap-2 transition-opacity hover:opacity-80"
                   >
                     <MessageCircle className="h-4 w-4" />
-                    <span>08521-55999-06</span>
+                    <span>08521-5599-906</span>
                   </a>
                   <a
                     href="mailto:primary.almadeena@gmail.com"
